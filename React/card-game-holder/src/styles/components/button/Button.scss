@@ -1,0 +1,44 @@
+@use "../../abstracts/variables.scss" as v;
+
+
+.btn{
+
+    &__nav{
+        border: none;
+        background-color: v.$primaryColor;
+        color: v.$primaryFontColor;
+        border: 1px solid v.$tertiaryColor;
+        padding : .5rem;
+
+        &:hover{
+            color: v.$secondaryFontColor;
+            cursor: pointer;
+        }
+    }
+
+    &__point{
+        border: none;
+        background-color: v.$primaryColor;
+        color: v.$primaryFontColor;
+        border: 1px solid v.$tertiaryColor;
+        width: 5rem;
+        padding: 1rem 0;
+        margin: .5rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+
+        &:hover{
+            border: 1px solid v.$secondaryFontColor;
+            color: v.$secondaryFontColor;
+            cursor: pointer;
+        }
+        &:disabled{
+            background-color: v.$tertiaryColor;
+            color: v.$tertiaryFontColor;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+   
+}

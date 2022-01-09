@@ -1,0 +1,13 @@
+
+@use "./abstracts/_variables.scss" as v;
+@use "./layout/MainNavigation.scss";
+@use "./components/button/Button.scss";
+@use "./pages/home.scss";
+@use "./components/cards/CardPlayer";
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
